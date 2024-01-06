@@ -6,6 +6,15 @@
 - Login Form
 - Sign Up Form
 - Form Validation
+- useRef
+- Firebase Setup
+- Deploying th web App
+- Create SignUp User
+- Implement Sign in User API
+- Created Redux Store with userSlice
+- Implement Sign Out
+- Update the user Profile
+- 
 
 
   ## Features
