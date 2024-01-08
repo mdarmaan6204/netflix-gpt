@@ -107,7 +107,7 @@ const Login = () => {
         onSubmit={(e) => e.preventDefault()}
         className=" text-white w-1/3 p-12 right-0 left-0  bg-black absolute mx-auto my-40 bg-opacity-80 rounded-lg"
       >
-        <h1 className="text-3xl my-2 font-bold">
+        <h1 className="text-3xl my-2 font-bold ">
           {isSignInForm ? "Sign In" : "Sign Up"}
         </h1>
         {!isSignInForm && (
@@ -132,7 +132,7 @@ const Login = () => {
         />
         <p className="text-red-500 py-2">{errorMessage}</p>
         <button
-          className="bg-red-800 p-2 my-6 w-full rounded-lg"
+          className="bg-red-800 p-2 my-6 w-full rounded-lg "
           onClick={handleClick}
         >
           {isSignInForm ? "Sign In" : "Sign Up"}
