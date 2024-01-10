@@ -27,7 +27,13 @@
 - Fetch data for Trailer Video
 - Update the storw with Trailer Video
 - Embedded the youtube Video and make it autoplay and mute
-- Added TailwindCSS to make MainContainer Awesome
+- Added TailwindCSS to build MainContainer Awesome
+- Build Secondary Container
+- Build Movie List
+- Build Movie Card
+- TMDB img CDN
+- Made the Browse page amazing using TailwindCSS
+- usePopuplarMovie , useUpcomingMovies , useTopRatedMovies Movies Custom Hooks
 
 
 
