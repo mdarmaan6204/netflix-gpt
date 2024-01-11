@@ -12,7 +12,7 @@ export const API_OPTIONS = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMzRjNWU5ODNlMWY0ZTU0YjUzZWNmZDU4ZmEyZmQyOCIsInN1YiI6IjY1OWMwYTJkYjRhNTQzMDA5NTYxNmRjZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.-7pqGEXN2fqa3ThjHazZKBf6xyxIfMIUOSDL8mDIqoY",
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMzRjNWU5ODNlMWY0ZTU0YjUzZWNmZDU4ZmEyZmQyOCIsInN1YiI6IjY1OWMwYTJkYjRhNTQzMDA5NTYxNmRjZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.-7pqGEXN2fqa3ThjHazZKBf6xyxIfMIUOSDL8mDIqoY" ,
   },
 };
 
@@ -25,3 +25,6 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "hindi", name: "Hindi" },
   { identifier: "spanish", name: "Spanish" },
 ];
+
+// export const BARD_API_KEY = process.env.REACT_APP_BARD_KEY;
+export const BARD_API_KEY = "AIzaSyCHwVgmAiPlncjzIvtx08p3g_6b7R65ejc"
