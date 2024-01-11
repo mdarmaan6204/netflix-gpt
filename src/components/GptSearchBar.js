@@ -20,10 +20,8 @@ const GptSearchBar = () => {
     return json?.results;
   }
 
-  console.log(process.env.REACT_APP_TMDB_KEY);
-
   const handleGptSearchClick = async () => {
-    console.log(searchText.current.value);
+    // console.log(searchText.current.value);
 
     const gptQuery =
       "Act as a Movie Recommendation System and suggest some movies for the query :" +
@@ -51,9 +49,9 @@ const GptSearchBar = () => {
 
   };
   return (
-    <div className="pt-[10%] flex justify-center">
+    <div className="pt-[50%] md:pt-[10%] flex justify-center">
       <form
-        className="bg-black w-1/2 grid grid-cols-12"
+        className="bg-black md:w-1/2 grid grid-cols-12"
         onSubmit={(e) => e.preventDefault()}
       >
         <input

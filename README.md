@@ -37,8 +37,14 @@
 - GPT Search Page
 - GPT Search Bar
 - Multi- Language Feature in our App
-- 
-- 
+- Get MakerSuit API Key
+- GPT Search API call
+- Fetched gptMoviesSUggestion from TMDB
+- create gptSlice and  add data
+- Reuse MovieLst to make Movie suggestion Container
+- Memoisation
+- Adding .env file and add to git ignore
+- Build our Site Responsive
 
 
 
