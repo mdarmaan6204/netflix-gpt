@@ -10,7 +10,7 @@ import { auth } from "../utlis/firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utlis/userSlice";
-import { LOGO, USER_ICON } from "../utlis/constants";
+import { BG_URL, USER_ICON } from "../utlis/constants";
 
 const Login = () => {
   const [isSignInForm, setSignInForm] = useState(true);
@@ -99,7 +99,7 @@ const Login = () => {
       <Header />
       <div className="absolute">
         <img
-          src= {LOGO}  alt="bg"
+          src= {BG_URL}  alt="bg"
         />
       </div>
       <form
