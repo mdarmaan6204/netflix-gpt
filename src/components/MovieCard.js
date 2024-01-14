@@ -5,7 +5,7 @@ const MovieCard = ({movieName, imgId}) => {
   if(!imgId) return null;
   return (
     <div className="w-36 md:w-52 pr-2">
-      <img alt={movieName} src= {IMG_CDN_URL + imgId} />
+      <img className="hover:scale-125 " alt={movieName} src= {IMG_CDN_URL + imgId} />
     </div>
   );
 };

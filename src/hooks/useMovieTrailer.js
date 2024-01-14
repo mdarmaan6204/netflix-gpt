@@ -18,8 +18,8 @@ const useMovieTrailer = (movieId) => {
     const filterData = json?.results?.filter(
       (video) => video.name === "Official Trailer"
     );
-    const trailer = filterData?.length ? filterData[0] : json.results[0];
-    // console.log(trailer);
+    const x = Math.floor(Math.random()*10);
+    const trailer = filterData?.length ? filterData[0] : json.results[x];
     dispatch(addTrailerVideo(trailer));
   };
 
