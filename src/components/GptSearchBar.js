@@ -3,7 +3,7 @@ import lang from "../utlis/languageConstants";
 import { useDispatch, useSelector } from "react-redux";
 import { API_OPTIONS, BARD_API_KEY } from "../utlis/constants";
 import { useNavigate } from "react-router-dom";
-import { addGptMovieResult, addSearchMovies } from "../utlis/GptSlice";
+import { addGptMovieResult } from "../utlis/GptSlice";
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 const GptSearchBar = () => {

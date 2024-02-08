@@ -5,7 +5,7 @@ const MovieList = ({ title, movies }) => {
   if (!movies) return;
   return (
     <div className="px-6 bg-black">
-      <h1 className="text-lg md:text-3xl font-bold py-4 text-white">{title}</h1>
+      <button className="text-lg md:text-xl font-bold py-4 text-white bg-red-800 p-4 m-4 rounded-xl">{title}</button>
       <div className="flex overflow-x-auto">
         <div className="flex">
           {movies.map((movie) => (

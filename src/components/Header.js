@@ -7,12 +7,14 @@ import { addUser, removeUser } from "../utlis/userSlice";
 import { BG_IMG, SUPPORTED_LANGUAGES, USER_ICON } from "../utlis/constants";
 import { toggleGptSearch } from "../utlis/GptSlice";
 import { changeLanguage } from "../utlis/configSlice";
+import lang from "../utlis/languageConstants"
 
 const Header = () => {
   const user = useSelector((store) => store.user);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
+  const langKey = useSelector((store) => store.config.lang);
   const handleClick = () => {
     signOut(auth)
       .then(() => {})
@@ -20,6 +22,8 @@ const Header = () => {
         navigate("/error");
       });
   };
+
+
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -73,11 +77,11 @@ const Header = () => {
             className="bg-purple-700 rounded-lg py-2 px-4 mx-2 my-4 text-white"
             onClick={handleGptSearchClick}
           >
-            {showGptSearch ? "Home" : "GPT Search"}
+            {showGptSearch ? lang[langKey].home : "GPT " + lang[langKey].search }
           </button>
           <img className="hidden md:block w-12 h-12" src={user.photoURL} alt="userIcon" />
           <button onClick={handleClick} className="font-bold text-white">
-            (Sign Out)
+            {lang[langKey].signOut}
           </button>
         </div>
       )}
