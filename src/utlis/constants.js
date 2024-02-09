@@ -27,4 +27,4 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "spanish", name: "Spanish" },
 ];
 
-export const BARD_API_KEY = process.env.REACT_APP_BARD_KEY;
+export const BARD_API_KEY = "AIzaSyCHwVgmAiPlncjzIvtx08p3g_6b7R65ejc";
