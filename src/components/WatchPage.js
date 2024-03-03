@@ -1,10 +1,8 @@
-import React from 'react'
+import React from "react";
 
-const WatchPage = ({id}) => {
-    console.log(id);
-  return (
-    <div>WatchPage</div>
-  )
-}
+const WatchPage = ({ id }) => {
+  console.log(id);
+  return <div>WatchPage</div>;
+};
 
-export default WatchPage
+export default WatchPage;

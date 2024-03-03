@@ -13,6 +13,7 @@ const MovieList = ({ title, movies }) => {
               key={movie.id}
               imgId={movie.backdrop_path}
               movieName={movie.title}
+              movieId = {movie.id}
             />
           ))}
         </div>
