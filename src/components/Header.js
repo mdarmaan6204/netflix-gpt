@@ -4,7 +4,7 @@ import { auth } from "../utlis/firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../utlis/userSlice";
-import { BG_IMG, SUPPORTED_LANGUAGES, USER_ICON } from "../utlis/constants";
+import { BG_IMG, NF_LOGO, SUPPORTED_LANGUAGES, USER_ICON } from "../utlis/constants";
 import { toggleGptSearch } from "../utlis/GptSlice";
 import { changeLanguage } from "../utlis/configSlice";
 import lang from "../utlis/languageConstants"
@@ -58,7 +58,7 @@ const Header = () => {
 
   return (
     <div className="flex flex-col justify-between absolute  w-screen px-8 py-2 bg-gradient-to-b from-black z-10 bg-opacity-90 md:flex-row">
-      <img className="w-44 m-auto md:mx-0" src={BG_IMG} alt="logo" />
+      <img className="w-44 m-auto md:mx-0" src={NF_LOGO} alt="logo" />
       {user && (
         <div className="flex p-2 justify-between">
           {showGptSearch && (

@@ -6,6 +6,8 @@ export const USER_ICON =
 
 export const BG_IMG =
   "https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png";
+export const NF_LOGO =
+  "https://cdn-icons-png.flaticon.com/512/5977/5977590.png";
 
 export const API_OPTIONS = {
   method: "GET",
@@ -13,7 +15,7 @@ export const API_OPTIONS = {
     accept: "application/json",
     Authorization:
       // "Bearer " + process.env.REACT_APP_TMDB_KEY ,
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMzRjNWU5ODNlMWY0ZTU0YjUzZWNmZDU4ZmEyZmQyOCIsInN1YiI6IjY1OWMwYTJkYjRhNTQzMDA5NTYxNmRjZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.-7pqGEXN2fqa3ThjHazZKBf6xyxIfMIUOSDL8mDIqoY" ,
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMzRjNWU5ODNlMWY0ZTU0YjUzZWNmZDU4ZmEyZmQyOCIsInN1YiI6IjY1OWMwYTJkYjRhNTQzMDA5NTYxNmRjZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.-7pqGEXN2fqa3ThjHazZKBf6xyxIfMIUOSDL8mDIqoY",
   },
 };
 
