@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { auth } from "../utlis/firebase";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../utlis/userSlice";
-import { BG_IMG, NF_LOGO, SUPPORTED_LANGUAGES, USER_ICON } from "../utlis/constants";
+import { NF_LOGO, SUPPORTED_LANGUAGES, USER_ICON } from "../utlis/constants";
 import { toggleGptSearch } from "../utlis/GptSlice";
 import { changeLanguage } from "../utlis/configSlice";
-import lang from "../utlis/languageConstants"
+import lang from "../utlis/languageConstants";
 
 const Header = () => {
   const user = useSelector((store) => store.user);
@@ -23,12 +23,10 @@ const Header = () => {
       });
   };
 
-
-
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        const { uid, email, displayName} = user;
+        const { uid, email, displayName } = user;
         dispatch(
           addUser({
             uid: uid,
@@ -57,10 +55,12 @@ const Header = () => {
   };
 
   return (
-    <div className="flex flex-col justify-between absolute  w-screen px-8 py-2 bg-gradient-to-b from-black z-10 bg-opacity-90 md:flex-row">
-      <img className="w-44 m-auto md:mx-0" src={NF_LOGO} alt="logo" />
+    <div className="flex flex-col md:items-center justify-between absolute  w-screen px-8 py-2 bg-gradient-to-b from-black z-10 bg-opacity-90 md:flex-row">
+      <Link to="/">
+        <img className="w-44 mx-auto md:mx-0 h-36" src={NF_LOGO} alt="logo" />
+      </Link>
       {user && (
-        <div className="flex p-2 justify-between">
+        <div className="flex p-2 justify-between items-center">
           {showGptSearch && (
             <select
               className="p-2 my-4 bg-gray-800 text-white"
@@ -77,9 +77,13 @@ const Header = () => {
             className="bg-purple-700 rounded-lg py-2 px-4 mx-2 my-4 text-white"
             onClick={handleGptSearchClick}
           >
-            {showGptSearch ? lang[langKey].home : "GPT " + lang[langKey].search }
+            {showGptSearch ? lang[langKey].home : "GPT " + lang[langKey].search}
           </button>
-          <img className="hidden md:block w-12 h-12" src={user.photoURL} alt="userIcon" />
+          <img
+            className="hidden md:block w-12 h-10"
+            src={user.photoURL}
+            alt="userIcon"
+          />
           <button onClick={handleClick} className="font-bold text-white">
             {lang[langKey].signOut}
           </button>
